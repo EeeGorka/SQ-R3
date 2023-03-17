@@ -693,9 +693,16 @@ body._lock {
   margin-left: -7.5rem;
 }
 
+ @media (max-width: 850px) {
+  .achievements__items {
+    margin-left: 100px;
+  }
+ }
+
  @media (max-width: 480px) {
   .achievements__items {
     flex-direction: column;
+    margin-left: 0;
   }
  }
 
