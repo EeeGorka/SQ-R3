@@ -693,7 +693,7 @@ body._lock {
   margin-left: -7.5rem;
 }
 
- @media (max-width: 850px) {
+/*  @media (max-width: 850px) {
   .achievements__items {
     margin-left: 100px;
   }
@@ -704,7 +704,19 @@ body._lock {
     flex-direction: column;
     margin-left: 0;
   }
- }
+ } */
+
+@media (max-width: 75em) {
+  .achievements__items {
+    -webkit-column-gap: calc(1.875rem + 50 * (100vw - 38.75rem) / 580);
+       -moz-column-gap: calc(1.875rem + 50 * (100vw - 38.75rem) / 580);
+            column-gap: calc(1.875rem + 50 * (100vw - 38.75rem) / 580);
+  }
+
+  .achievements__items {
+    margin-left: calc(0rem + -120 * (100vw - 62.5rem) / 200);
+  }
+}
 
 .achievements__item {
   text-align: center;
@@ -1477,16 +1489,6 @@ body._lock {
 
   .decor-main__link {
     font-size: calc(1.25rem + 10 * (100vw - 26.25rem) / 780);
-  }
-
-  .achievements__items {
-    -webkit-column-gap: calc(1.875rem + 50 * (100vw - 38.75rem) / 580);
-       -moz-column-gap: calc(1.875rem + 50 * (100vw - 38.75rem) / 580);
-            column-gap: calc(1.875rem + 50 * (100vw - 38.75rem) / 580);
-  }
-
-  .achievements__items {
-    margin-left: calc(0rem + -120 * (100vw - 62.5rem) / 200);
   }
 
   .item-achievements__value {
